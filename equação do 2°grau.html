@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8" content="width=device-width, initial-scale=1.0">
+    </head>
+    <script>
+        window.onload = function() {
+            let a = parseFloat(prompt("digite o valor de 'a':"));
+            let b = parseFloat(prompt("digite o valor de 'b':"));
+            let c = parseFloat(prompt("digite o valor de 'c':"));
+
+            let delta = b * b - 4 * a * c;
+
+            alert("o valor de delta (Δ) é: " + delta);
+
+            if (delta < 0) {
+                alert("delta menor que zero. Não tem raízes reais.");
+            } else if (delta === 0) {
+                let raizUnica = -b / (2 * a);
+                alert("delta igual a zero. Tem uma raiz real: " + raizUnica);
+            } else {
+                let raiz1 = (-b + Math.sqrt(delta)) / (2 * a);
+                let raiz2 = (-b - Math.sqrt(delta)) / (2 * a);
+                alert("delta maior que zero. Tem duas raízes reais:\nRaiz 1: " + raiz1 + "\nRaiz 2: " + raiz2);
+            }
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>

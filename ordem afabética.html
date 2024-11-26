@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8" content="width=device-width, initial-scale=1.0">
+    </head>
+    <script>
+        window.onload = function() {
+            let nomes = [];
+
+            for (let i = 1; i <= 20; i++) {
+                let nome = prompt("digite o nome " + i + ":");
+                nomes.push(nome);
+            }
+
+            nomes.sort();
+
+            let resultado = "nomes em ordem alfabética:\n";
+            for (let i = 0; i < nomes.length; i++) {
+                resultado += nomes[i] + "\n";
+            }
+
+            alert(resultado);
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>
